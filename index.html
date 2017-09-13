@@ -19,7 +19,7 @@
         <![endif]-->
     </head>
     <body>
-<div class="a-top"><h1 class="title">h1.title</h1></div>
+<div class="a-top"><h1 class="title">Bestill transport</h1></div>
         <div class="header-container">
             <header class="wrapper clearfix">
                 <nav class="a-nav">
@@ -34,24 +34,32 @@
 
         <div class="main-container">
             <div class="main wrapper clearfix">
-                    <section>
-                        <button id="fs-doc-button">Go Fullscreen</button>
-                        <h2>article section h2</h2>
+                    <section class="form">
                        <div>
                             <label>Fra</label>
-                           <input type="text" placeholder="Adresse"></input>
+                           <input type="text" placeholder="Skriv adresse her"></input>
                        </div>
                        <div>
                            <label>Til</label>
-                           <input type="text" placeholder="Adresse"></input>
+                           <input type="text" placeholder="Skriv adresse her"></input>
                        </div>
                         <div>
                            <label>Dato</label>
-                           <input type="date"></input>
+                           <input type="date" placeholder="Velg dato"></input>
                        </div>
                        <div>
-                           <label>Tid</label>
-                           <input type="time"></input>
+                           <label>Tid for avreise</label>
+                           <select>
+                            <option value="" disabled selected>Velg tid</option>
+                            <option>10:40 - 10:50</option>
+                            <option>11:40 - 11:50</option>
+                            <option>12:40 - 12:50</option>
+                            <option>13:40 - 13:50</option>
+                            <option>14:40 - 14:50</option>
+                            <option>15:40 - 15:50</option>
+                            <option>16:40 - 16:50</option>
+                            <option>17:40 - 17:50</option>
+                          </select>
                        </div>
                        <div>
                            <input type="checkbox" id="test1" />
@@ -74,33 +82,6 @@
             </div> <!-- #main -->
         </div> <!-- #main-container -->
 
-<script>
-var requestFullscreen = function (ele) {
-  if (ele.requestFullscreen) {
-    ele.requestFullscreen();
-  } else if (ele.webkitRequestFullscreen) {
-    ele.webkitRequestFullscreen();
-  } else if (ele.mozRequestFullScreen) {
-    ele.mozRequestFullScreen();
-  } else if (ele.msRequestFullscreen) {
-    ele.msRequestFullscreen();
-  } else {
-    console.log('Fullscreen API is not supported.');
-  }
-};
-
-
-var fsDocButton = document.getElementById('fs-doc-button');
-var fsExitDocButton = document.getElementById('fs-exit-doc-button');
-
-fsDocButton.addEventListener('click', function(e) {
-  e.preventDefault();
-  requestFullscreen(document.documentElement);
-  fsDocButton.style.display = 'none';
-});
-
-
-</script>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
