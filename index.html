@@ -59,12 +59,12 @@
                        </div>
                        <hr>
                        <div>
-                           <input type="checkbox" id="test1" />
-    <label for="test1"><span>Ta med en passasjer</span><span>En venn, ledsager, ektefelle e.l.</span></label>
+                           <input type="checkbox" id="test2" />
+    <label for="test2"><span>Ta med en passasjer</span><span>En venn, ledsager, ektefelle e.l.</span></label>
                        </div>
                        <div>
-                           <input type="checkbox" id="test1" />
-    <label for="test1"><span>Trenger du ekstra plass?</span><span>Til rullestol, rullator, baggasje e.l.</span></label>
+                           <input type="checkbox" id="test3" />
+    <label for="test3"><span>Trenger du ekstra plass?</span><span>Til rullestol, rullator, baggasje e.l.</span></label>
                        </div>
                        <div>
                            <input type="submit" value="Legg inn bestilling"></label>
@@ -73,7 +73,33 @@
                     
             </div> <!-- #main -->
         </div> <!-- #main-container -->
+<button id="fs-doc-button">Go Fullscreen</button>
+<script>
+var requestFullscreen = function (ele) {
+  if (ele.requestFullscreen) {
+    ele.requestFullscreen();
+  } else if (ele.webkitRequestFullscreen) {
+    ele.webkitRequestFullscreen();
+  } else if (ele.mozRequestFullScreen) {
+    ele.mozRequestFullScreen();
+  } else if (ele.msRequestFullscreen) {
+    ele.msRequestFullscreen();
+  } else {
+    console.log('Fullscreen API is not supported.');
+  }
+};
 
+
+var fsDocButton = document.getElementById('fs-doc-button');
+var fsExitDocButton = document.getElementById('fs-exit-doc-button');
+
+fsDocButton.addEventListener('click', function(e) {
+  e.preventDefault();
+  requestFullscreen(document.documentElement);
+});
+
+
+</script>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
