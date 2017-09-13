@@ -35,7 +35,7 @@
         <div class="main-container">
             <div class="main wrapper clearfix">
                     <section>
-
+                        <button id="fs-doc-button">Go Fullscreen</button>
                         <h2>article section h2</h2>
                        <div>
                             <label>Fra</label>
@@ -73,7 +73,7 @@
                     
             </div> <!-- #main -->
         </div> <!-- #main-container -->
-<button id="fs-doc-button">Go Fullscreen</button>
+
 <script>
 var requestFullscreen = function (ele) {
   if (ele.requestFullscreen) {
@@ -96,6 +96,7 @@ var fsExitDocButton = document.getElementById('fs-exit-doc-button');
 fsDocButton.addEventListener('click', function(e) {
   e.preventDefault();
   requestFullscreen(document.documentElement);
+  fsDocButton.style.display = 'none';
 });
 
 
