@@ -123,10 +123,7 @@ nav ul {
     border-radius: 50%;
 }
 
-nav a:hover,
-nav a:visited {
-    color: white;
-}
+
 
 nav a:hover {
     text-decoration: underline;
@@ -207,12 +204,28 @@ input[type=submit] {
 input[type=checkbox] {
     width: 51px;
     height: 51px;
+    background: white;
+    box-shadow: 0 4px 5px rgba(33,47,0,0.34);
 }
 input[type=checkbox]:checked {
     background: #71A100;
 }
-
-
+.checks input[type=checkbox], .checks label {
+    display: inline-block;
+}
+.checks label {
+    width: calc(100% - 60px);
+    font-weight: normal;
+}
+.checks label span:first-child {
+    font-size: 18px;
+    display: block;
+}
+.checks label span:last-child {
+    font-size: 14px;
+    display: block;
+    color: #707070;
+}
 
 
 
