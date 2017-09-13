@@ -231,7 +231,18 @@ input[type=checkbox]:checked {
 
 
 
+.dateclass{
+}
 
+.dateclass.placeholderclass::before{
+    width:100%;
+    content:attr(placeholder);
+}
+
+.dateclass.placeholderclass:hover::before{
+    width:0%;
+    content:"";
+}
 
 /* ==========================================================================
    Media Queries

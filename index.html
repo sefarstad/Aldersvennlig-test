@@ -45,7 +45,7 @@
                        </div>
                         <div>
                            <label>Dato</label>
-                           <input type="date" placeholder="Velg dato"></input>
+                           <input type="date" placeholder="Velg dato" onClick="$(this).removeClass('placeholderclass')" class="dateclass placeholderclass">
                        </div>
                        <div>
                            <label>Tid for avreise</label>
@@ -63,7 +63,16 @@
                        </div>
                        <div class="checks">
                            <input type="checkbox" id="test1" />
-    <label for="test1">Trenger du retur?</label>
+    <label for="test1"><span>Trenger du retur?</span><span></span></label>
+                       </div>
+                       <div id="retur">
+                           <label>Tid for retur</label>
+                           <select>
+                            <option value="" disabled selected>Velg tid</option>
+                            <option>15:40 - 15:50</option>
+                            <option>16:40 - 16:50</option>
+                            <option>17:40 - 17:50</option>
+                          </select>
                        </div>
                        <hr>
                        <div class="checks">
