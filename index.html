@@ -24,9 +24,9 @@
             <header class="wrapper clearfix">
                 <nav class="a-nav">
                     <ul>
-                        <li class="a-li"><a href="#"><span class="a-nav__icon"></span>Mine turer</a></li>
-                        <li class="a-li a-li--active"><a href="#"><span class="a-nav__icon"></span>Bestill tur</a></li>
-                        <li class="a-li"><a href="#"><span class="a-nav__icon"></span>Informarsjon</a></li>
+                        <li class="a-li"><a href="#"><span class="a-nav__icon tur"></span>Mine turer</a></li>
+                        <li class="a-li a-li--active"><a href="#"><span class="a-nav__icon bestill"></span>Bestill tur</a></li>
+                        <li class="a-li"><a href="#"><span class="a-nav__icon info"></span>Informarsjon</a></li>
                     </ul>
                 </nav>
             </header>
@@ -38,17 +38,20 @@
                        <div>
                             <label>Fra</label>
                            <input type="text" placeholder="Skriv adresse her"></input>
+                           <div class="adresses">
+                            
+                           </div>
                        </div>
                        <div>
                            <label>Til</label>
                            <input type="text" placeholder="Skriv adresse her"></input>
                        </div>
                         <div>
-                           <label>Dato</label>
+                           <label class="cal">Dato</label>
                            <input type="date" placeholder="Velg dato" onClick="$(this).removeClass('placeholderclass')" class="dateclass placeholderclass">
                        </div>
                        <div>
-                           <label>Tid for avreise</label>
+                           <label class="time">Tid for avreise</label>
                            <select>
                             <option value="" disabled selected>Velg tid</option>
                             <option>10:40 - 10:50</option>
@@ -63,10 +66,10 @@
                        </div>
                        <div class="checks">
                            <input type="checkbox" id="test1" />
-    <label for="test1"><span>Trenger du retur?</span><span></span></label>
+    <label class="retur" for="test1"><span>Trenger du retur?</span><span></span></label>
                        </div>
                        <div id="retur">
-                           <label>Tid for retur</label>
+                           <label class="time">Tid for retur</label>
                            <select>
                             <option value="" disabled selected>Velg tid</option>
                             <option>15:40 - 15:50</option>
@@ -77,11 +80,11 @@
                        <hr>
                        <div class="checks">
                            <input type="checkbox" id="test2" />
-    <label for="test2"><span>Ta med en passasjer</span><span>En venn, ledsager, ektefelle e.l.</span></label>
+    <label class="guest" for="test2"><span>Ta med en passasjer</span><span>En venn, ledsager, ektefelle e.l.</span></label>
                        </div>
                        <div class="checks">
                            <input type="checkbox" id="test3" />
-    <label for="test3"><span>Trenger du ekstra plass?</span><span>Til rullestol, rullator, baggasje e.l.</span></label>
+    <label class="space" for="test3"><span>Trenger du ekstra plass?</span><span>Til rullestol, rullator, baggasje e.l.</span></label>
                        </div>
                        <div>
                            <input type="submit" value="Legg inn bestilling"></label>
