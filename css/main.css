@@ -206,6 +206,10 @@ input:focus, select:focus {
         outline: 0;
     box-shadow: 0 0 0 1.5px #59c5fc, 0 0 0 3px #b4e6ff;
 }
+.input-valid, .dateclass.input-valid {
+    border-color: white;
+    box-shadow: 0 0 3px #71A100;
+}
 select {
     font-size: 18px;
     background: white;

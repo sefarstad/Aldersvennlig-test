@@ -27,13 +27,30 @@ $( document ).ready(function() {
 	$("#a1").on('click', function(event) {
 	 $("#ad1f").val("Sogn frivillighetssentral");
 	 $(".ad1").slideUp();
+	 $("#ad1f").addClass("input-valid");
 	});
 
 	$("#a2").on('click', function(event) {
 	 $("#ad2f").val("Storo Storsenter");
 	 $(".ad2").slideUp();
+	 $("#ad2f").addClass("input-valid");
 	});
 
+	$( ".dateclass" ).focusout(function() { 
+		if($(".dateclass").val()) {
+			$(".dateclass").addClass("input-valid");
+		}
+	});
+	$( "#timeclass1" ).focusout(function() { 
+		if($("#timeclass1").val()) {
+			$("#timeclass1").addClass("input-valid");
+		}
+	});
+	$( "#timeclass2" ).focusout(function() { 
+		if($("#timeclass2").val()) {
+			$("#timeclass2").addClass("input-valid");
+		}
+	});
 
 	/*$("#test2").on('click', function(event) {
 	  $('html, body').animate({scrollTop:$(this).position().top - 160}, 'slow');
