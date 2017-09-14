@@ -360,6 +360,25 @@ input[type=checkbox]:checked {
     background-repeat: no-repeat;
 }
 
+
+
+.adresses {
+    display: block;
+    background: white;
+    box-shadow: 0 -1px 10px rgba(0,0,0,0.16);
+}
+.adresses span {
+    display: block;
+    border: 1px solid #E3E2E2;
+    padding: 12px;
+}
+.adresses a {
+    display: block;
+}
+.adresses span:first-child {
+    background: #F5F5F5;
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
