@@ -19,13 +19,19 @@ $( document ).ready(function() {
 	});
 	$( "#ad1f" ).focusout(function() { 
 		$(".ad1").slideUp();
+		if($("#ad1f").val()) {
+			$("#ad1f").removeClass("input-valid");
+		}
 	});
 	$( "#ad2f" ).focusout(function() { 
 		$(".ad2").slideUp();
+		if($("#ad2f").val()) {
+			$("#ad2f").removeClass("input-valid");
+		}
 	});
 
 	$("#a1").on('click', function(event) {
-	 $("#ad1f").val("Sogn frivillighetssentral");
+	 $("#ad1f").val("Tåsen Eldresenter");
 	 $(".ad1").slideUp();
 	 $("#ad1f").addClass("input-valid");
 	});
