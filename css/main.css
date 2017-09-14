@@ -202,6 +202,10 @@ input {
     box-shadow: inset 0 4px 5px rgba(0,0,0,0.10);
     -webkit-appearance: none;
 }
+input:focus {
+        outline: 0;
+    box-shadow: 0 0 0 1.5px #59c5fc, 0 0 0 3px #b4e6ff;
+}
 select {
     font-size: 18px;
     background: white;

@@ -12,20 +12,26 @@ $( document ).ready(function() {
 		}
 	});
 	$( "#ad1f" ).focus(function() { 
-		$(".ad1").slideToggle();
+		$(".ad1").slideDown();
 	});
 	$( "#ad2f" ).focus(function() { 
-		$(".ad2").slideToggle();
+		$(".ad2").slideDown();
+	});
+	$( "#ad1f" ).focusout(function() { 
+		$(".ad1").slideUp();
+	});
+	$( "#ad2f" ).focusout(function() { 
+		$(".ad2").slideUp();
 	});
 
 	$("#a1").on('click', function(event) {
 	 $("#ad1f").val("Sogn frivillighetssentral");
-	 $(".ad1").slideToggle();
+	 $(".ad1").slideUp();
 	});
 
 	$("#a2").on('click', function(event) {
 	 $("#ad2f").val("Storo Storsenter");
-	 $(".ad2").slideToggle();
+	 $(".ad2").slideUp();
 	});
 
 
