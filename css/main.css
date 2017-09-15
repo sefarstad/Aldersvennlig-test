@@ -192,10 +192,11 @@ nav a:hover {
 }
 label, input {
     display: block;
+    font-size: 18px;
 }
 input {
-    font-size: 18px;
-    padding: 13px 12px;
+    
+    padding: 14px 12px;
     width: calc(100% - 25px);
     border-radius: 7px;
     border: 1px solid #E3E2E2;
@@ -214,7 +215,7 @@ select {
     font-size: 18px;
     background: white;
     width: 100%;
-    padding: 13px 12px;
+    padding: 11px 12px 12px;
     border-radius: 7px;
     border: 1px solid #E3E2E2;
     box-shadow: 0 4px 5px rgba(0,0,0,0.10);
@@ -303,6 +304,7 @@ input[type=checkbox]:checked {
 .dateclass{
     box-shadow: 0 4px 5px rgba(0,0,0,0.10);
     min-height: 27px;
+        padding: 11px 12px;
 }
 
 .cal, .time, .retur, .guest, .space {
@@ -326,7 +328,7 @@ input[type=checkbox]:checked {
       content: "";
     display: block;
     position: absolute;
-    top: 42px;
+    top: 40px;
     right: 14px;
     width: 24px;
     height: 24px;
